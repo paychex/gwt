@@ -7,7 +7,8 @@ fi
 echo Using $MAVEN_BIN
 
 function set-random-dir() {
-  export RANDOM_DIR=/tmp/random-dir-$RANDOM$RANDOM$RANDOM$RANDOM
+  #export RANDOM_DIR=/tmp/random-dir-$RANDOM$RANDOM$RANDOM$RANDOM
+  export RANDOM_DIR=./tmp
   rm -rf $RANDOM_DIR
   mkdir -p $RANDOM_DIR
 }
